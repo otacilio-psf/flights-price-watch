@@ -7,7 +7,7 @@ def get_best_price_day_msg(flight_data):
     flight_data.sort(key=lambda x: x["price"])
     flight = flight_data[0]
 
-    price = flight['price']*(1-0.05)
+    price = flight['price']
 
     outbound_from = flight['route'][0]['cityFrom']
     outbound_to = flight['route'][1]['cityTo']
