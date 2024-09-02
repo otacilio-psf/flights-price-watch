@@ -1,13 +1,13 @@
-name: Run Python Script
+name: Flight Price Notification
 
-on:    
-  workflow_dispatch:
+on:
   schedule:
-    - cron: "0 8,11,14,17,20,23 * * *"
-
+    - cron: "0 6,9,12,15,18,21 * * *"
+    
+  workflow_dispatch:
 
 jobs:
-  run-script:
+  run-workflow:
     runs-on: ubuntu-latest
 
     steps:
